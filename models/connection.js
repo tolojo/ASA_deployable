@@ -1,6 +1,6 @@
 var pg = require('pg');
 
-const connectionString = "postgres://czxadwdxwahaiu:e8642a00d8abbb16cb564d4728d8c8625ba76670b64b2e8a58813b8d4696b3c9@ec2-99-80-170-190.eu-west-1.compute.amazonaws.com:5432/d8qdfgis64fvaq"
+const connectionString = "postgres://mevveufraiyeqv:5f74ed3b02e48baca153249419fbbcc987e4e9362e2f04e31d29f5aad49754b4@ec2-34-248-169-69.eu-west-1.compute.amazonaws.com:5432/d6ulbi3taocg6n"
 
 const Pool = pg.Pool
 const pool = new Pool({
