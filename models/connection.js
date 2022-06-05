@@ -6,7 +6,9 @@ const Pool = pg.Pool
 const pool = new Pool({
     connectionString,
     max: 20,
-    ssl: true
+    ssl: {
+    rejectUnauthorized: false
+  }
     
 })
 
