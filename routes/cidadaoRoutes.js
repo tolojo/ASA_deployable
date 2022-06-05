@@ -9,4 +9,11 @@ router.get('/:id', async function(req, res, next) {
     res.status(result.status).send(result.result);
 });
 
+router.post('/login',async function(req, res, next) {
+    let cidadao = req.body;
+    let result = await mCid.login(cidadao);
+    res.status(result.status).send(result.result);
+});
+
+
 module.exports = router;
