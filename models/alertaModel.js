@@ -59,7 +59,7 @@ module.exports.saveAlertaPsa = async function (alerta) {
     try {
         let sql1 = "select max(alerta_id) from alerta";
         let result1 = await pool.query(sql1, []);
-        let sql2 = "select max(psa_alerta_laerta_id) from psa_alerta";
+        let sql2 = "select max(psa_alerta_alerta_id) from psa_alerta";
         let result2 = await pool.query(sql2, []);
         let alertaId = result1.rows[0];
         let ultimoId = result2.rows[0];
