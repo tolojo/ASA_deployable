@@ -65,9 +65,12 @@ module.exports.saveAlertaPsa = async function (alerta) {
         let ultimoId = result2.rows[0];
         console.log(alertaId.max);
         while (alertaId.max == ultimoId.max) {
+            console.log(alertaId.max);
+            console.log(ultimoId.max);
             let sql3 = "select max(alerta_id) from alerta";
             let result3 = await pool.query(sql3, []);
             alertaId = result3.rows[0];
+            
         }
         
             let sql = "insert into psa_alerta(psa_alerta_alerta_id,psa_alerta_psa_id) values ($1,$2)";
